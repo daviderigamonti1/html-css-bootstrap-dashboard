@@ -36,8 +36,8 @@
         </div>
     </nav>
     <main class="container-lg px-sm-5 my-4" id="newBook">
-        <h1>Nuovo Libro</h1>
-        <form class="row g-3 was-validated border-bottom border-light-subtle" novalidate>
+        <h1 class="pb-3">Nuovo Libro</h1>
+        <form class="row g-3 was-validated" novalidate>
             <div class="col-6">
                 <label for="name" class="form-label">Nome autore</label>
                 <input type="text" class="form-control" id="name" name="name" required placeholder="Inserisci il nome dell'autore">
@@ -47,9 +47,9 @@
                 <input type="text" class="form-control" id="surname" name="surname" required placeholder="Inserisci il cognome dell'autore">
             </div>
             <div class="col-12">
-                <label for="title" class="form-label">Inserisci il titolo del libro</label>
+                <label for="title" class="form-label">Titolo</label>
                 <input type="text" class="form-control" id="title" name="title" maxlenght="30" placeholder="Inserisci il titolo del libro" required>
-                <div class="form-text">Titolo versione italiana - lunghezza max 30 caratteri</div>
+                <div class="form-text">Titolo versione italiana</div>
             </div>
             <div class="col-12 col-lg-4">
                 <label for="genere" class="form-label">Genere</label>
@@ -69,10 +69,17 @@
                 <label for="isbn#" class="form-label">ISBN#</label>
                 <input type="text" class="form-control" id="isbn#" required placeholder="Inserisci il codice ISBN#">
             </div>
+            <div class="border border-bottom border-light-subtle mt-5 mb-3"></div>
             <div class="col-12">
-                <label for="note">Note</label>
+                <label class="mb-2" for="note">Note</label>
                 <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="note"></textarea>  
             </div>
+            <div class="form-check ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="digitale">
+                <label class="form-check-label text-dark" for="digitale">
+                  Disponibile anche in digitale
+                </label>
+              </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Aggiungi Libro</label>
             </div>
