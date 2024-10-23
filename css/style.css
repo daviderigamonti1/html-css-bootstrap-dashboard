@@ -9,3 +9,7 @@
 #logo {
     height: 50px;
 }
+
+#newBook label {
+    font-weight: 700;
+}
